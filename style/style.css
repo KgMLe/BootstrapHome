@@ -156,9 +156,10 @@ nav a:hover{
     width: 100%;
     height: 100vh;
     background: linear-gradient( to right, #2671AB 0%,
-    #2671AB 40%,  rgb(29, 28, 28) 60%, black 100%
+    #2671AB 50%,  rgb(29, 28, 28) 50%, black 100%
   );
   }
+/* ABOUT SECTION CSS */
 
   .aboutdiv h2{
     width: 545px;
@@ -169,13 +170,7 @@ nav a:hover{
     text-align: center; 
 
     }
-    /* .aspiring{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-    } */
-
+   
    .aboutdiv{
     width: 100%;
     height: 100vh;
@@ -209,14 +204,14 @@ nav a:hover{
    top: -620px;
    color: white;
   }
-
-  .resumediv{
+ /* RESUME PART */
+  /* .resumediv{
     width: 100%;
     height: 100vh;
     background: linear-gradient( to right, #2671AB 0%,
     #2671AB 50%,  rgb(29, 28, 28) 50%, black 100%
-  );
-  } 
+  ); 
+  }  */
 
    .resumediv h2{
     width: 557px;
@@ -224,18 +219,38 @@ nav a:hover{
     font-weight: 600;
     font-size: 64px;
     line-height: 77px;
-    float: right;
-    color: #2671AB;
+    float: left;
+    color: rgb(29, 28, 28);
+  }
+ 
+  /* RESUMES FLIPCARDS */
+  .education {
+    position: relative;
+    width: 500px;
+    height: 420px;
+    top: -120px;
+    color: rgb(29, 28, 28);
+    text-align: justify;
   }
 
+  .experience{
+    position: relative;
+    width: 500px;
+    height: 420px;
+    top: -299.5px;
+    color: white;
+    left: 50%;
+    text-align: justify;
+  }
 
-  .projectsdiv{
+  /* PROJECTS SEC */
+   .projectsdiv{
     width: 100%;
     height: 100vh;
     background: linear-gradient( to right, #2671AB 0%,
     #2671AB 50%,  rgb(29, 28, 28) 50%, black 100%
   );
-  } 
+  }  
 
   .projectsdiv h2{
     width: 557px;
@@ -264,14 +279,14 @@ nav a:hover{
     color: #2671AB;
   }
 
-  /* CAROUSEL */
+  /* CAROUSEL
   .cards-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex;
   }
   .card img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 50%;
+    max-height: 50%;
   }
 
   .card {
@@ -279,7 +294,14 @@ nav a:hover{
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     border: none;
     border-radius: 0;
+    text-overflow: ellipsis;
   }
+
+
+  .card-body{
+
+  } */
+/*   
   .carousel-inner {
     padding: 1em;
   }
@@ -292,7 +314,7 @@ nav a:hover{
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
-}
+} */
 
 /* CONTACT PAGE */
 
