@@ -22,6 +22,8 @@ width: 150px;
 height: 150px;
 left: 0%;
 top: 0%;
+padding: 0%;
+margin: 0%; 
 }
 
 .homepg {
@@ -97,13 +99,14 @@ nav a:hover{
   background-color: #ffffff;
 }
 
+
+
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   /* Hide sidenav on smaller screens */
-  nav {
+   nav {
     width: 0;
-  }
-  
+  } 
   /* Show burger menu on smaller screens */
   .burger-menu {
     display: block;
@@ -117,7 +120,7 @@ nav a:hover{
   .burger-menu.active span:nth-child(2) {
     opacity: 0;
   }
-  
+
   .burger-menu.active span:last-child {
     transform: rotate(45deg) translate(-5px, -5px);
   }
@@ -128,12 +131,17 @@ nav a:hover{
   }
 }
 
+.all{
+  margin: 5rem; 
+  margin-left: 5rem;
+}
+
 .homediv{
     width: 100%;
     height: 100vh;
-    background: linear-gradient( to right, #2671AB 0%,
+    /* background: linear-gradient( to right, #2671AB 0%,
     #2671AB 50%,  rgb(29, 28, 28) 50%, black 100%
-  );
+  ); */
   }
 /* ABOUT SECTION CSS */
 
@@ -150,37 +158,59 @@ nav a:hover{
    .aboutdiv{
     width: 100%;
     height: 100vh;
-    background: linear-gradient( to right, #2671AB 0%,
+    /* background: linear-gradient( to right, #2671AB 0%,
     #2671AB 50%,  rgb(29, 28, 28) 50%, black 100%
-  );
+  ); */
   } 
 
   .aboutme{
     position: relative;
     width: 500px;
     height: 420px;
-    top: -520px;
+    top: -472px;
     color: rgb(29, 28, 28);
     text-align: justify;
   }
 
   .mypic{
     position: relative;
-    width: 350px;
-    height: 350px;
-    left: 60%;
-    top:  -210px;
+    width: 300px;
+    height: 300px;
+    left: 62.5%;
+    top:  -220px;
     border-radius: 50%;
   }
 
-  .moreinfo{
+  #moreinfo{
    position: relative;
    width: 378px;
    height: 168px;
    top: -620px;
-   left: 60%;
+   left: 65%;
    color: white;
   }
+/* skills section */
+ .skills {
+  max-width: 20.75rem;
+  /* margin: auto; */
+  text-align: left;
+  left: 50px;
+  margin-top: -50rem;
+}
+
+.skill-header {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 6.875rem;
+  height: 6.25rem;
+}
  /* RESUME PART */
   /* .resumediv{
     width: 100%;
@@ -224,9 +254,9 @@ nav a:hover{
    .projectsdiv{
     width: 100%;
     height: 100vh;
-    background: linear-gradient( to right, #2671AB 0%,
+    /* background: linear-gradient( to right, #2671AB 0%,
     #2671AB 50%,  rgb(29, 28, 28) 50%, black 100%
-  );
+  ); */
   }  
 
   .projectsdiv h2{
@@ -234,8 +264,13 @@ nav a:hover{
     height: 232px;
     font-weight: 600;
     font-size: 64px;
-    line-height: 77px;
+    /* line-height: 77px; */
    }
+
+   /* .col{
+    width: 500px;
+    height: 420px;
+   } */
 /* TESTIMONIAL SECTION */
 
   /* .testsdiv{
@@ -246,7 +281,7 @@ nav a:hover{
   );
   } */
 
-  .testsdiv h2{
+  #testimonials  h2{
     width: 557px;
     height: 232px;
     font-weight: 600;
@@ -256,29 +291,31 @@ nav a:hover{
     color: #92a5b4;
   }
 
-  .container {
-  border: 2px solid rgb(255, 255, 255);
-  background-color: transparent;
+  .container1 {
+  /* border: 2px solid rgb(255, 255, 255); */
+  /* background-color: transparent; */
   padding: 16px;
   margin: 16px 0;
-}
-
-/* .container::after {
+  background: transparent;
+  color: white;
   content: "";
   clear: both;
   display: table;
-} */
+}
+
 
 .container img {
   float: left;
   margin-right: 20px;
   border-radius: 50%;
+  width: 60px;
+  height: 60px;
 }
 
-.container span {
+/* .container span {
   font-size: 20px;
   margin-right: 15px;
-}
+} */
   
 /* CONTACT PAGE */
 
