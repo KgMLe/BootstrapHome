@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+
 body{
     overflow-x: hidden;
     width: 100%;
@@ -25,6 +27,7 @@ top: 0%;
 .homepg {
   text-align: center;
   font-size: 76px;
+  font-family: 'Cabin Sketch', cursive;;
   position: absolute;
   width: 500px;
   height: 232px;
@@ -53,37 +56,10 @@ top: 0%;
       color: rgb(193, 213, 250);
     }
 }
-/* .homediv h1{
-  text-align: center;
-  font-size: 76px;
-  position: absolute;
-  width: 557px;
-  height: 232px;
-  left: 650px;
-  top: 260px;
-  margin: 0;
-  line-height: 1;
-  font-size: 10em;
-  color: transparent;
-  text-transform: uppercase;
-  -webkit-background-clip: text;
-  animation: animate 5s linear infinite;
-  -webkit-background-size: 500%;
-  background-size: 500%;
-  }
-
-  @keyframes animate{
-      0%{
-          background-position: 0 100%;
-      }
-      50%{
-          background-position: 100% 0;
-      } 
-} */
 
 nav {
   height: 100%;
-  width: 250px;
+  width: 220px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -190,11 +166,11 @@ nav a:hover{
 
   .mypic{
     position: relative;
-    width: 370px;
-    height: 370px;
-    left: 750px;
-    top:  -205px;
-    /* border-radius: 165.5px;  */
+    width: 350px;
+    height: 350px;
+    left: 60%;
+    top:  -210px;
+    border-radius: 50%;
   }
 
   .moreinfo{
@@ -202,6 +178,7 @@ nav a:hover{
    width: 378px;
    height: 168px;
    top: -620px;
+   left: 60%;
    color: white;
   }
  /* RESUME PART */
@@ -223,7 +200,7 @@ nav a:hover{
     color: rgb(29, 28, 28);
   }
  
-  /* RESUMES FLIPCARDS */
+  /* RESUMES ARDS */
   .education {
     position: relative;
     width: 500px;
@@ -276,46 +253,33 @@ nav a:hover{
     font-size: 64px;
     line-height: 77px;
     float: right;
-    color: #2671AB;
+    color: #92a5b4;
   }
 
-  /* CAROUSEL
-  .cards-wrapper {
-    display: flex;
-    justify-content: flex;
-  }
-  .card img {
-    max-width: 50%;
-    max-height: 50%;
-  }
+  .container {
+  border: 2px solid rgb(255, 255, 255);
+  background-color: transparent;
+  padding: 16px;
+  margin: 16px 0;
+}
 
-  .card {
-    margin: 0 0.5em;
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border: none;
-    border-radius: 0;
-    text-overflow: ellipsis;
-  }
-
-
-  .card-body{
-
-  } */
-/*   
-  .carousel-inner {
-    padding: 1em;
-  }
-
-  .carousel-control-prev,
-.carousel-control-next {
-  background-color: #e1e1e1;
-  width: 5vh;
-  height: 5vh;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
+/* .container::after {
+  content: "";
+  clear: both;
+  display: table;
 } */
 
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+  
 /* CONTACT PAGE */
 
 
