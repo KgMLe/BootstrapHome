@@ -11,8 +11,9 @@ body{
     overflow-x: hidden;
     width: 100%;
     height: 100vh;
+    color: rgb(29, 28, 28);
     background: linear-gradient( to right, #2671AB 0%,
-    #2671AB 60%,  rgb(29, 28, 28) 40%, black 100%
+    pink 60%,  pink 40%, pink 100%
   );
 }
 
@@ -27,7 +28,6 @@ margin: 0%;
 }
 
 .homepg {
-  text-align: center;
   font-size: 76px;
   font-family: 'Cabin Sketch', cursive;;
   position: absolute;
@@ -49,10 +49,10 @@ margin: 0%;
       color: #2b3035;
     }
     50% {
-      color: #375591;
+      color: pink;
     }
     75% {
-      color: #2671AB;
+      color: #8eb2ce;
     }
     100% {
       color: rgb(193, 213, 250);
@@ -76,7 +76,7 @@ nav a{
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 20px;
-  color: #818181;
+  color: #2671AB;
   display: block;
   transition: 0.3s;
   transition: 1s;
@@ -84,7 +84,7 @@ nav a{
 
 nav a:hover{
     text-decoration: none;
-    border-top: 3px solid rgba(255, 255, 255, 0.758);
+    border-top: 3px solid pink;
     border-bottom: 3px solid rgba(255, 255, 255, 0.758);
     padding: 5px;
     font-size: 20px;
@@ -102,35 +102,22 @@ nav a:hover{
 
 
 /* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-  /* Hide sidenav on smaller screens */
-   nav {
-    width: 0;
-  } 
-  /* Show burger menu on smaller screens */
-  .burger-menu {
-    display: block;
+@media screen and (max-width: 700px) {
+  .navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
   }
-  
-  /* Styling for active burger menu icon */
-  .burger-menu.active span:first-child {
-    transform: rotate(-45deg) translate(-5px, 5px);
-  }
-  
-  .burger-menu.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .burger-menu.active span:last-child {
-    transform: rotate(45deg) translate(-5px, -5px);
-  }
-  
-  /* Styling for active sidenav */
-  nav .active {
-    width: 250px;
-  }
+  .navbarbar a {float: left;}
+  div.content {margin-left: 0;}
 }
 
+@media screen and (max-width: 400px) {
+  .navber a {
+    text-align: center;
+    float: none;
+  }
+}
 .all{
   margin: 5rem; 
   margin-left: 5rem;
@@ -166,28 +153,29 @@ nav a:hover{
   .aboutme{
     position: relative;
     width: 500px;
-    height: 420px;
-    top: -472px;
+    /* height: 420px; */
+    top: -650px;
     color: rgb(29, 28, 28);
     text-align: justify;
   }
 
   .mypic{
     position: relative;
-    width: 300px;
-    height: 300px;
+    /* width: 300px;
+    height: 300px; */
     left: 62.5%;
-    top:  -220px;
+    top:  -1105px;
     border-radius: 50%;
   }
 
   #moreinfo{
    position: relative;
-   width: 378px;
-   height: 168px;
-   top: -620px;
-   left: 65%;
-   color: white;
+   /* width: 378px;
+   height: 168px; */
+   top: -930px;
+   left: 105%;
+   float: right;
+   color: #2671AB;
   }
 /* skills section */
  .skills {
@@ -195,7 +183,7 @@ nav a:hover{
   /* margin: auto; */
   text-align: left;
   left: 50px;
-  margin-top: -50rem;
+  margin-top: -40rem;
 }
 
 .skill-header {
@@ -241,11 +229,11 @@ nav a:hover{
   }
 
   .experience{
-    position: relative;
-    width: 500px;
+    /* position: relative;
+    width: 500px; */
     height: 420px;
     top: -299.5px;
-    color: white;
+    color: #2671AB;
     left: 50%;
     text-align: justify;
   }
@@ -287,8 +275,7 @@ nav a:hover{
     font-weight: 600;
     font-size: 64px;
     line-height: 77px;
-    float: right;
-    color: #92a5b4;
+    margin-bottom: -5.5rem;
   }
 
   .container1 {
@@ -329,10 +316,10 @@ nav a:hover{
 }
 
 #contact {
-  background: rgb(29, 28, 28);
-  padding: 25px;
-  margin: 150px 0;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  background: transparent;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 0 20px 0 rgba(247, 244, 244, 0.2), 0 5px 5px 0 rgba(238, 236, 236, 0.24);
 }
 
 #contact h2 {
@@ -341,7 +328,7 @@ nav a:hover{
   font-weight: 600;
   font-size: 64px;
   line-height: 77px;
-  color: #2671AB;
+  color: rgb(48, 46, 47);
 }
 
 #contact h4 {
@@ -349,6 +336,7 @@ nav a:hover{
   display: block;
   font-size: 13px;
   font-weight: 400;
+  color: #202020;
 }
 
 fieldset {
@@ -364,7 +352,8 @@ fieldset {
 #contact textarea {
   width: 100%;
   border: 1px solid #ccc;
-  background: #000000;
+  border-radius: 5px;
+  /* background: #000000; */
   margin: 0 0 5px;
   padding: 10px;
 }
@@ -375,7 +364,7 @@ fieldset {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
-  border: 1px solid #aaa;
+  border: 1px solid white;
 }
 
 #contact textarea {
@@ -387,9 +376,10 @@ fieldset {
 #contact button[type="submit"] {
   cursor: pointer;
   width: 100%;
+  left: 50%;
   border: none;
-  background: #527db4;
-  color: #FFF;
+  background: pink;
+  color: #726f6f;
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
@@ -406,9 +396,6 @@ fieldset {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.copyright {
-  text-align: center;
-}
 
 #contact input:focus,
 #contact textarea:focus {
@@ -416,8 +403,8 @@ fieldset {
   border: 1px solid #ffffff;
 }
 
-::-webkit-input-placeholder {
-  color: #888;
+/* ::-webkit-input-placeholder {
+  color: #2c2b2b;
 }
 
 :-moz-placeholder {
@@ -430,4 +417,4 @@ fieldset {
 
 :-ms-input-placeholder {
   color: #888;
-}
+} */
