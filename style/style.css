@@ -7,39 +7,28 @@
     font-family: 'Inter', sans-serif;
 }
 
+html,
+body{
+  overflow-x:hidden
+}
+
 body{
     overflow-x: hidden;
     width: 100%;
     height: 100vh;
-    color: rgb(29, 28, 28);
-    background: linear-gradient( to right, #2671AB 0%,
+    color: #0d1950;
+    background: linear-gradient( to right, white 0%,
     pink 60%,  pink 40%, pink 100%
   );
 }
 
-#logo{
-position: relative;
-width: 150px;
-height: 150px;
-left: 0%;
-top: 0%;
-padding: 0%;
-margin: 0%; 
-}
 
-.homepg {
-  font-size: 76px;
-  font-family: 'Cabin Sketch', cursive;;
-  position: absolute;
-  width: 500px;
-  height: 232px;
-  left: 650px;
-  top: 260px;
-  margin: 0;
-  line-height: 1;
-  font-size: 10em;
-  animation: color-change 5s infinite;
-  }
+#logo{
+
+width: 50px;
+height: 50px;
+ 
+}
 
   @keyframes color-change {
     0% {
@@ -59,27 +48,22 @@ margin: 0%;
     }
 }
 
-nav {
-  height: 100%;
-  width: 220px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #ffffff;
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s;
-  }
+section {
+  width: 100vh;
+}
 
+.navbar {
+  z-index: 70;
+}
 nav a{
-  padding: 8px 8px 8px 32px;
+  /* padding: 8px 8px 8px 32px; */
   text-decoration: none;
   font-size: 20px;
-  color: #2671AB;
+  color: black;
   display: block;
   transition: 0.3s;
   transition: 1s;
+
 }
 
 nav a:hover{
@@ -91,18 +75,9 @@ nav a:hover{
     transition: 1s;
 }
 
-.burger-menu span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin-bottom: 5px;
-  background-color: #ffffff;
-}
-
-
 
 /* Media query for smaller screens */
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
   .navbar {
     width: 100%;
     height: auto;
@@ -117,19 +92,30 @@ nav a:hover{
     text-align: center;
     float: none;
   }
-}
-.all{
+} */
+ .all{
   margin: 5rem; 
   margin-left: 5rem;
-}
+} 
 
-.homediv{
+#homediv{
     width: 100%;
     height: 100vh;
-    /* background: linear-gradient( to right, #2671AB 0%,
-    #2671AB 50%,  rgb(29, 28, 28) 50%, black 100%
-  ); */
   }
+
+  #homepg {
+    font-size: 76px;
+    font-family: 'Cabin Sketch', cursive;
+    position: relative;
+    width: 500px;
+    height: 232px;
+    top: 260px;
+    margin: 0;
+    line-height: 1;
+    font-size: 10em;
+    animation: color-change 5s infinite;
+    }
+
 /* ABOUT SECTION CSS */
 
   .aboutdiv h2{
@@ -137,67 +123,67 @@ nav a:hover{
     height: 232px;
     font-weight: 600;
     font-size: 44px;
-    line-height: 77px;
-    text-align: center; 
+    line-height: 77px; 
 
     }
    
-   .aboutdiv{
+   /* .aboutdiv{
     width: 100%;
     height: 100vh;
-    /* background: linear-gradient( to right, #2671AB 0%,
+    background: linear-gradient( to right, #2671AB 0%,
     #2671AB 50%,  rgb(29, 28, 28) 50%, black 100%
-  ); */
-  } 
+  ); 
+  }  */
 
-  .aboutme{
-    position: relative;
+  #aboutme{
+    /* position: relative; */
     width: 500px;
     /* height: 420px; */
-    top: -650px;
     color: rgb(29, 28, 28);
     text-align: justify;
   }
 
-  .mypic{
-    position: relative;
-    /* width: 300px;
-    height: 300px; */
-    left: 62.5%;
-    top:  -1105px;
-    border-radius: 50%;
-  }
-
   #moreinfo{
-   position: relative;
    /* width: 378px;
    height: 168px; */
-   top: -930px;
+   /* top: -60px; */
    left: 105%;
    float: right;
-   color: #2671AB;
+   color: #0d1950;
+   text-align: right;
   }
 /* skills section */
+
  .skills {
-  max-width: 20.75rem;
+  /* max-width: 20.75rem; */
   /* margin: auto; */
-  text-align: left;
+  /* text-align: left;
   left: 50px;
-  margin-top: -40rem;
+  margin-top: -40rem; */
 }
 
 .skill-header {
   text-align: left;
   margin-bottom: 1rem;
+  display: flex;
 }
 
 .skills-wrapper img {
   padding: 1.25rem;
+  display: flex;
 }
 
 .icon {
   width: 6.875rem;
   height: 6.25rem;
+  display: flex;
+}
+
+.progress{
+  background: transparent !important;
+  border: 2px white;
+  color: black;
+  font-weight: 100px;
 }
  /* RESUME PART */
   /* .resumediv{
@@ -219,22 +205,21 @@ nav a:hover{
   }
  
   /* RESUMES ARDS */
-  .education {
+  /* .education {
     position: relative;
     width: 500px;
     height: 420px;
     top: -120px;
     color: rgb(29, 28, 28);
     text-align: justify;
-  }
+  } */
 
   .experience{
     /* position: relative;
     width: 500px; */
     height: 420px;
-    top: -299.5px;
     color: #2671AB;
-    left: 50%;
+    /* left: 50%; */
     text-align: justify;
   }
 
@@ -284,10 +269,11 @@ nav a:hover{
   padding: 16px;
   margin: 16px 0;
   background: transparent;
-  color: white;
+  color: #0d1950;
   content: "";
   clear: both;
   display: table;
+  border:solid 1px #ffffff;
 }
 
 
@@ -307,13 +293,13 @@ nav a:hover{
 /* CONTACT PAGE */
 
 
-.container {
+/* .container {
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
   position: relative;
-  background-color: black;
-}
+  borer-color: 2px solid white;
+} */
 
 #contact {
   background: transparent;
@@ -379,10 +365,11 @@ fieldset {
   left: 50%;
   border: none;
   background: pink;
-  color: #726f6f;
+  color: black;
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
+  border-radius: 5px;
 }
 
 #contact button[type="submit"]:hover {
@@ -403,18 +390,62 @@ fieldset {
   border: 1px solid #ffffff;
 }
 
-/* ::-webkit-input-placeholder {
-  color: #2c2b2b;
+/* footer */
+footer{
+  text-align: center;
 }
 
-:-moz-placeholder {
-  color: #888;
+.rounded-social-buttons {
+  text-align: center;
 }
 
-::-moz-placeholder {
-  color: #888;
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
-:-ms-input-placeholder {
-  color: #888;
-} */
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+
+.rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
+  color: black;
+  background: transparent;
+  border-color: black;
+}
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+  color: black;
+  background: transparent;
+  border-color: black;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+  color: black;
+  background: transparent;
+  border-color: black;
+} 
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+ color: black;
+  background: transparent;
+  border-color: black;
+}
