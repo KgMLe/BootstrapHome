@@ -56,7 +56,6 @@ section {
   z-index: 70;
 }
 nav a{
-  /* padding: 8px 8px 8px 32px; */
   text-decoration: none;
   font-size: 20px;
   color: black;
@@ -77,38 +76,26 @@ nav a:hover{
 
 
 /* Media query for smaller screens */
-/* @media screen and (max-width: 700px) {
-  .navbar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .navbarbar a {float: left;}
-  div.content {margin-left: 0;}
+@media only screen and (max-width: 479px) {
+.callhome {
+  display: flex;
+  flex-direction: column-reverse;
+
 }
 
-@media screen and (max-width: 400px) {
-  .navber a {
-    text-align: center;
-    float: none;
-  }
-} */
- .all{
-  margin: 5rem; 
-  margin-left: 5rem;
-} 
+.row-cols-2{
+  display: flex;
+  flex-direction: column;
+}
+}
 
-#homediv{
-    width: 100%;
-    height: 100vh;
+@media only screen and (min-width: 480px) {
+  .callhome{
+    display: flex;
+   flex-direction: row;
   }
-
-  #homepg {
-    font-size: 76px;
-    font-family: 'Cabin Sketch', cursive;
-    position: relative;
-    width: 500px;
-    height: 232px;
+  .landing {
+    /* font-size: 76px; */
     top: 260px;
     margin: 0;
     line-height: 1;
@@ -116,51 +103,55 @@ nav a:hover{
     animation: color-change 5s infinite;
     }
 
-/* ABOUT SECTION CSS */
-
-  .aboutdiv h2{
-    width: 545px;
-    height: 232px;
-    font-weight: 600;
-    font-size: 44px;
-    line-height: 77px; 
-
+    .row-cols-2{
+    display: flex;
+    flex-direction: row;
     }
-   
-   /* .aboutdiv{
+}
+
+ .all{
+  margin: 5rem; 
+  margin-left: 5rem;
+} 
+
+#homediv{
     width: 100%;
-    height: 100vh;
-    background: linear-gradient( to right, #2671AB 0%,
-    #2671AB 50%,  rgb(29, 28, 28) 50%, black 100%
-  ); 
-  }  */
+    height: auto;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+  }
+
+   .callhome{
+   
+
+   }
+
+  
+
+/* ABOUT SECTION CSS */
+#about{
+  padding-top: 10vh;
+}
+
+
+   .aboutdiv{
+     margin-top: 30px;
+    margin-top: 4.6em; 
+  }  
 
   #aboutme{
-    /* position: relative; */
     width: 500px;
-    /* height: 420px; */
     color: rgb(29, 28, 28);
     text-align: justify;
   }
 
   #moreinfo{
-   /* width: 378px;
-   height: 168px; */
-   /* top: -60px; */
    left: 105%;
    float: right;
    color: #0d1950;
    text-align: right;
   }
 /* skills section */
-
- .skills {
-  /* max-width: 20.75rem; */
-  /* margin: auto; */
-  /* text-align: left;
-  left: 50px;
-  margin-top: -40rem; */
-}
 
 .skill-header {
   text-align: left;
@@ -182,17 +173,12 @@ nav a:hover{
 .progress{
   background: transparent !important;
   border: 2px white;
-  color: black;
   font-weight: 100px;
+  margin-bottom:26px;
+  margin-bottom: 1.66em;
+  text-align: center;
 }
  /* RESUME PART */
-  /* .resumediv{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient( to right, #2671AB 0%,
-    #2671AB 50%,  rgb(29, 28, 28) 50%, black 100%
-  ); 
-  }  */
 
    .resumediv h2{
     width: 557px;
@@ -205,54 +191,36 @@ nav a:hover{
   }
  
   /* RESUMES ARDS */
-  /* .education {
-    position: relative;
-    width: 500px;
-    height: 420px;
-    top: -120px;
-    color: rgb(29, 28, 28);
-    text-align: justify;
-  } */
 
   .experience{
-    /* position: relative;
-    width: 500px; */
-    height: 420px;
+    height: auto;
     color: #2671AB;
-    /* left: 50%; */
     text-align: justify;
   }
 
-  /* PROJECTS SEC */
    .projectsdiv{
     width: 100%;
-    height: 100vh;
-    /* background: linear-gradient( to right, #2671AB 0%,
-    #2671AB 50%,  rgb(29, 28, 28) 50%, black 100%
-  ); */
+    height: auto;
   }  
 
   .projectsdiv h2{
     width: 557px;
-    height: 232px;
+    height: auto;
     font-weight: 600;
     font-size: 64px;
-    /* line-height: 77px; */
+    margin-bottom: 1.6rem;
    }
 
-   /* .col{
-    width: 500px;
-    height: 420px;
-   } */
-/* TESTIMONIAL SECTION */
 
-  /* .testsdiv{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient( to right, #2671AB 0%,
-    #2671AB 50%,  rgb(29, 28, 28) 50%, black 100%
-  );
-  } */
+  .testwrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  #testimonials{
+   padding: top 10vh; ;
+  }
 
   #testimonials  h2{
     width: 557px;
@@ -264,8 +232,6 @@ nav a:hover{
   }
 
   .container1 {
-  /* border: 2px solid rgb(255, 255, 255); */
-  /* background-color: transparent; */
   padding: 16px;
   margin: 16px 0;
   background: transparent;
@@ -284,22 +250,6 @@ nav a:hover{
   width: 60px;
   height: 60px;
 }
-
-/* .container span {
-  font-size: 20px;
-  margin-right: 15px;
-} */
-  
-/* CONTACT PAGE */
-
-
-/* .container {
-  max-width: 400px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  borer-color: 2px solid white;
-} */
 
 #contact {
   background: transparent;
@@ -339,7 +289,6 @@ fieldset {
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 5px;
-  /* background: #000000; */
   margin: 0 0 5px;
   padding: 10px;
 }
